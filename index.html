@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>What's New In Compiler Explorer?</title>
+
+    <link rel="stylesheet" href="reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="reveal.js/dist/theme/moon.css" />
+
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" />
+
+    <style>
+      div.col2 {
+        display: flex;
+      }
+
+      div.col2 > div {
+        flex: 1;
+      }
+
+      pre.terminal {
+        background: #000;
+      }
+      div.footer {
+        z-index: 10;
+        font-size: 70%;
+        font-style: italic;
+        position: absolute;
+        bottom: 1em;
+        text-align: center;
+      }
+
+      div.footer.logo {
+        left: 1em;
+        margin-left: 15px;
+        height: 6em;
+      }
+
+      div.footer.logo img {
+        height: 5em;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section class="hide-footer">
+            <h2>What's new in</h2>
+            <img
+              src="images/ce-logo.svg"
+              width="800px"
+              alt="Compiler Explorer"
+            />
+          </section>
+        </section>
+        <section>
+          <section>Slide 1</section>
+          <section>Slide 2</section>
+        </section>
+      </div>
+      <div id="footer" class="footer logo hidden">
+        <img src="images/ce.svg" alt="Compiler Explorer" />
+      </div>
+    </div>
+
+    <script type="module">
+      import Reveal from "./reveal.js/dist/reveal.esm.js";
+      import Notes from "./reveal.js/plugin/notes/notes.esm.js";
+      import Markdown from "./reveal.js/plugin/markdown/markdown.esm.js";
+      import Highlight from "./reveal.js/plugin/highlight/highlight.esm.js";
+
+      const isLive = window.location.origin == "https://mattgodbolt.github.io";
+
+      Reveal.initialize({
+        width: 1200,
+        height: 700,
+        margin: 0.1,
+        maxScale: 10,
+        hash: true,
+		controls: isLive,
+		controlsTutorial: isLive,
+
+        plugins: [Markdown, Highlight, Notes],
+      });
+
+      const hideyMcHideFace = (event) => {
+        document
+          .getElementById("footer")
+          .classList.toggle(
+            "hidden",
+            event.currentSlide.classList.contains("hide-footer")
+          );
+      };
+      Reveal.on("ready", hideyMcHideFace);
+      Reveal.on("slidechanged", hideyMcHideFace);
+    </script>
+  </body>
+</html>
