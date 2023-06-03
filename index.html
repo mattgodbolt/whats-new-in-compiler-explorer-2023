@@ -49,6 +49,10 @@
       .hidden {
         display: none;
       }
+      .white-bg {
+        background-color: #ccc;
+        border-radius: 1em;
+      }
     </style>
   </head>
   <body>
@@ -57,47 +61,66 @@
         <section>
           <section class="hide-footer">
             <h2>What's new in</h2>
-            <img
-              src="images/ce-logo.svg"
-              width="800px"
-              alt="Compiler Explorer"
-            />
+            <div class="white-bg">
+              <img
+                src="images/ce-logo.svg"
+                width="800px"
+                alt="Compiler Explorer"
+              />
+            </div>
           </section>
         </section>
 
         <section>
           <section><h2>Quick fire questions</h2></section>
+          <section><h2>Why?</h2></section>
           <section>
             <h2>When?</h2>
-            <h4>22<sup>nd</sup> March 2012</h4>
-            <img src="images/ce-2011.png" />
+            <div class="fragment">
+              <h4>22<sup>nd</sup> March 2012</h4>
+              <img src="images/ce-2011.png" height="400px" />
+            </div>
           </section>
           <section>
             <div class="col2">
-              <div>http://web.eecs.utk.edu/~bvanderz/teaching/cs140Fa10/notes/Dllists/
-                <h4>2012</h4>
+              <div>
+                <h3>2012</h3>
                 <ul>
-                  <li>TODO look up xx gcc C++ compilers</li>
-                  <li>Unfiltered assmebly output only</li>
+                  <li>gcc &amp; clang</li>
+                  <li>C++</li>
+                  <!-- wayback listed 15 compilers including icc by May 2012
+                  https://web.archive.org/web/20120525042912/http://gcc.godbolt.org/ -->
+                  <li>Unfiltered</li>
                   <li>5k lines of JavaScript</li>
                   <li>Just me!</li>
+                  <li>Self-funded</li>
                 </ul>
               </div>
-              <div>
-                <h4>2023</h4>
+              <div class="fragment">
+                <h3>2023</h3>
                 <ul>
-                  <li>2,100+ compilres in 50+ languages</li>
-                  <li>Filters, tools, diffs &amp; much more...</li>
+                  <li>2,100+ compilers</li>
+                  <li>50+ languages</li>
+                  <li>Filters, tools, diffs...</li>
                   <li>65k lines of TypeScript</li>
-                  <li>Amazing team, Patrons, GH &amp; commmerical sponsors</li>
+                  <li>Amazing team<br /><img src="images/the-team.png" /></li>
+                  <li>Patrons &amp; sponsors</li>
                 </ul>
               </div>
             </div>
           </section>
-          <section><h2>Why?</h2></section>
-          <section>How?</section>
           <section>
-            Who?
+            <h2>How?</h2>
+            <img src="images/CE_server_2.jpg" class="fragment" height="600px" />
+            <aside class="notes">
+              A giant ball of duct tape, nearly all open source, including all
+              the infra. JavaScript became TypeScript, leans heavily on lots of
+              OSS including GoldenLayout and Monaco and of course all the
+              compilers!
+            </aside>
+          </section>
+          <section>
+            <h2>Who?</h2>
             <aside class="notes">
               what do people use CE for?
               <ul>
@@ -114,29 +137,59 @@
         </section>
 
         <section>
-          <section>Crash course</section>
           <section>
-            Editor
+            <h2>UI Crash course</h2>
             <aside class="notes">
-              vim mode save/load editor, reveal linked code... connections to
-              friends' websites add new...
-            </aside>
-          </section>
-          <section>
-            Compiler View
-            <aside class="notes">
-              compiler selection dialog? output vs filter tools vs windows vim
-              mode
+              - Design Ethos - Perfect is the enemy of good enough - Need to fit
+              a number of use cases - Small-er screens? (mobile, er look
+              puppies) - Windows, parent/child aspect - Output options vs
+              Filters - Extra compiler panes vs Tools - Compiler Selector -
+              search - favourite - popout
             </aside>
           </section>
         </section>
 
         <section>
-          <section>Libraries</section>
-          <section>Languages</section>
-          <section>Conformance View</section>
-          <section>Execution Only View</section>
-          <section>IDE mode</section>
+          <section>
+            <h2>"Jordan"</h2>
+            <ul>
+              <li>Low-latency trading developer</li>
+              <li>Performance is key</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Example 1</h3>
+            <ul>
+              <li><a href="https://godbolt.org/z/MKev5E6bz">Link</a></li>
+              <li><a href="https://godbolt.org/z/4vnoKsqGv">Analysis</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Example 2</h3>
+            <aside class="notes">
+              - create IDE mode
+              - save as "square.cpp"
+              - Add to IDE
+              - make a new pane - put `extern int square(int); and main() { return squrare(42); }
+              - Add a new and put:
+              project(test)
+              add_executable(example main.cpp square.cpp)
+              - add new exe
+              - yay, put -O2 show it compiles...
+              - put -flto and show it inlines!!
+              https://godbolt.org/z/bjh7zz59Y
+              - show Template!
+            </aside>
+          </section>
+          <section>
+            <ul>
+              <li>Basic functionality</li>
+              <li>Diff view</li>
+              <li>Analysis</li>
+              <li>IDE mode</li>
+              <li>Templates</li>
+            </ul>
+          </section>
         </section>
         <section>
           <section>Tools</section>
@@ -182,6 +235,7 @@
         hash: true,
         controls: isLive,
         controlsTutorial: isLive,
+        transition: "fade",
 
         plugins: [Markdown, Highlight, Notes],
       });
