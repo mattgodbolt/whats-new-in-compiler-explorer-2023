@@ -55,12 +55,10 @@ Ideas:
       - Templates
   - "Mason" - C++ YouTuber or educator who wants to quickly demonstrate languages, execute only, libraries. teach folks. show asm popups, CFG window. Sonar, clang-tidy, readelf, env var overrides
   - "Reg" - Compiler Developer, clang-query, llvm AST view
-  - "Joanna" - compatibility checking, comformance view
   - "Matt" you're a middle-aged man can't let go of his childhood. show jsbeeb/beebasm
 
 Other features not to forget:
 - other languages
-- libraries
 - shiny new env var/overrides
 - tooling
 - libraries
@@ -69,3 +67,9 @@ Other features not to forget:
 
 Fun stufF:
 - BBC Micro
+
+
+NEE DTO SHOW CODE EXECUTION
+GPU?
+
+STATS
