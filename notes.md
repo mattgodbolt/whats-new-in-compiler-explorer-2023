@@ -69,7 +69,21 @@ Fun stufF:
 - BBC Micro
 
 
-NEE DTO SHOW CODE EXECUTION
+NEED TO SHOW CODE EXECUTION
 GPU?
 
 STATS
+
+
+---- notes
+
+run trhgouh one overran hugely
+
+run through two
+- intro took 5m yay
+- 15 to do the "ux overview" and had a number of things I missed out, like compiler picker (!)
+  - probably too apologetic?
+- 10m to get to end of "Jordan"
+- 10m to get mostly through "Mason", maybe 5m more
+- 10m for "Joanna" but honestly was rushed and not clear. Maybe more direct links by now
+- ZOOMED throguh rest and future and no time for questions

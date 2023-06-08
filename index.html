@@ -112,7 +112,7 @@
           </section>
           <section>
             <h2>How?</h2>
-            <img src="images/CE_server_2.jpg" class="fragment" height="600px" />
+            <img src="images/CE_server_2.jpg" class="fragment" height="400px" />
             <aside class="notes">
               A giant ball of duct tape, nearly all open source, including all
               the infra. JavaScript became TypeScript, leans heavily on lots of
@@ -163,18 +163,21 @@
             <h3>Example 1</h3>
             <ul>
               <li><a href="https://godbolt.org/z/MKev5E6bz">Link</a></li>
-              <li><a href="https://godbolt.org/z/4vnoKsqGv">Analysis</a></li>
+              <li class="fragment">
+                <a href="https://godbolt.org/z/4vnoKsqGv">Analysis</a>
+              </li>
             </ul>
           </section>
           <section>
             <h3>Example 2</h3>
+            <a href="https://godbolt.org/z/bjh7zz59Y" class="fragment">Link</a>
             <aside class="notes">
               - create IDE mode - save as "square.cpp" - Add to IDE - make a new
               pane - put `extern int square(int); and main() { return
               squrare(42); } - Add a new and put: project(test)
               add_executable(example main.cpp square.cpp) - add new exe - yay,
-              put -O2 show it compiles... - put -flto and show it inlines!!
-              https://godbolt.org/z/bjh7zz59Y - show Template!
+              put -O2 show it compiles... - put -flto and show it inlines!! -
+              show Template!
             </aside>
           </section>
           <section>
@@ -212,16 +215,21 @@
                 }</pre
                 >
               </code>
-              Show overrides (IF FIXED) - https://godbolt.org/z/q14Po9rqP
+              Show overrides (IF FIXED) - https://godbolt.org/z/q14Po9rqP Show
+              execution!
             </aside>
           </section>
           <section>
-            <h3>Updating old code</h3>
-            terrible code for sonar? new/malloc/integer overflow? libraries
-            https://godbolt.org/z/jWjYrhY8Y ? https://godbolt.org/z/vrEebEce1 ?
-            <- score format, sonar finds no issue EXECUTE ONLY readelf
-            clang-tidy --checks=TBD? compiler list
-            <aside class="notes">https://godbolt.org/z/vrEebEce1</aside>
+            <h3>Execution</h3>
+            https://godbolt.org/z/h8srzcrG9
+          </section>
+          <section>
+            <h3>Teaching compilation/linker</h3>
+            https://godbolt.org/z/vs1Yqfdbn
+          </section>
+          <section>
+            <h3>Analysis</h3>
+            https://godbolt.org/z/Yh11a78fM
           </section>
           <section>
             <h3>What we covered</h3>
@@ -232,7 +240,7 @@
               <li>Overrides</li>
               <li>Sonar</li>
               <li>Execute only</li>
-              <li>Libraries</li>
+              <li>Libraries</li><!-- TODO TALK ABOUT LIBRARIES -->
             </ul>
           </section>
         </section>
@@ -244,11 +252,11 @@
             </ul>
           </section>
           <section>
-            what we covered
+            <h3>What we covered</h3>
             <ul>
               <li>AST</li>
               <li>LLVM pass viewer</li>
-              <li>Conformance view?</li>
+              <li>Conformance view</li>
             </ul>
           </section>
         </section>
@@ -274,13 +282,19 @@
             <h2>GPUs</h2>
             <ul>
               <li>maybe</li>
+              <li><a href="https://godbolt.org/z/MPaen74Yj">link</a></li>
+              <li><a href="https://godbolt.org/z/7xdbbWGPY">link</a></li>
             </ul>
+          </section>
+          <section>
+            <h2>Windows Execution</h2>
+            ...take two...
           </section>
           <section>Future Dreams</section>
           <section>More langs/compilers</section>
           <section>More platforms</section>
           <section>
-            DREAMS - logins, configurable links, live updates, CPU emulation,
+            DREAMS - logins, configurable links, live updates, CPU emulation
           </section>
         </section>
       </div>
