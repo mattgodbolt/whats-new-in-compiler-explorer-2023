@@ -87,3 +87,28 @@ run through two
 - 10m to get mostly through "Mason", maybe 5m more
 - 10m for "Joanna" but honestly was rushed and not clear. Maybe more direct links by now
 - ZOOMED throguh rest and future and no time for questions
+
+--- third runthru at work
+* 10m to intro
+* 13m to do UX overciew
+* 21m to to end of Mason
+* 18m to end ... but rushed
+  - got a good laugh at "matt"
+
+Suggestions:
+- Reg -> cal it CE User Journeys?
+- Yijie -> also users "security researcher" looking for stack overlow, injection spots etc
+- Suggestion to drop the UX overview entirelys
+  - more time
+  - it comes out more naturally in the user journeys
+- Suggestions from tao
+  - why:
+    - The concrete example with range for is nice; would suggest starting off with the anecdote although some will have heard it before
+  - how:
+    - A system diagram to help audience appreciate complexity
+    - Touch upon ballpark of costs which provides an organic segue towards thanking sponsors (and incepting the idea of audience members becoming sponsors)
+  - timelines
+    - Names with the faces; perhaps augmented with number of commits or a big feature they're proud of
+    - Alternatively it would be good to include them and some "and the rest of our open source contributors" on the closing card
+  - names of archetypes
+    - Picture (possibly GPT-generated, kind caricatures)
