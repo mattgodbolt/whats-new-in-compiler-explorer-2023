@@ -143,6 +143,10 @@
         </section>
 
         <section>
+          <h2>User Journeys</h2>
+        </section>
+
+        <section>
           <section>
             <h2>"Jordan"</h2>
             <ul>
@@ -158,7 +162,8 @@
                 <a href="https://godbolt.org/z/4vnoKsqGv">Analysis</a>
               </li>
               <aside class="notes">
-                Mention this kind of thing is one of the things one might do at Aquatic
+                Mention this kind of thing is one of the things one might do at
+                Aquatic
               </aside>
             </ul>
           </section>
@@ -182,7 +187,6 @@
               <li>Analysis</li>
               <li>IDE mode</li>
               <li>Templates</li>
-              <li>Libraries</li>
             </ul>
           </section>
         </section>
@@ -197,46 +201,59 @@
           </section>
           <section>
             <h3>Teaching</h3>
-            todo spans? maybe write from scratch? or leave just blank part in the middle?
-            <a href="https://godbolt.org/z/cTcEPMnTb">Link</a>
+            <a href="https://godbolt.org/z/6eGo5eTx9">Link</a>
             <aside class="notes">
-              Start with: https://godbolt.org/z/ssGMvs5T5
               <code>
                 <pre>
                 #include &lt;algorithm>
+                #include &lt;span>
                 #include &lt;vector>
                   
-                bool has_zero(const std::vector&lt;int> &amp;v) {
+                bool has_zero(const std::span&lt;int> &amp;v) {
                   return std::ranges::find(v, 0) != std::end(v);
                 }</pre
                 >
               </code>
-              Show overrides (IF FIXED) - https://godbolt.org/z/q14Po9rqP Show
-              execution!
             </aside>
           </section>
           <section>
             <h3>Execution</h3>
-            https://godbolt.org/z/h8srzcrG9 open without exec view make new one
-            link!!!!
+            <a href="https://godbolt.org/z/8dv8qse4j">Link</a>
+            <aside class="notes">
+              Show code as-is...move to execution. fmt? libraries!
+              <code>
+                <pre>
+                  fmt::print(
+                    "vector{{{}}} has a zero? {}\n",
+                    fmt::join(i, ", "),
+                    has_zero(i));
+                </pre>
+              </code>
+            </aside>
           </section>
           <section>
-            <h3>Likning</h3>
-            https://godbolt.org/z/vs1Yqfdbn
+            <h3>Linking</h3>
+            <a href="https://godbolt.org/z/oGPMnnddP">Link</a>
+            <aside class="notes">
+              Show code, then move demo the various binary options. Finally show
+              `objdump -sC`, maybe `nm`
+            </aside>
           </section>
           <section>
             <h3>Static Analysis</h3>
-            https://godbolt.org/z/Yh11a78fM Maybe get some clang-tidy ones?
+            <a href="https://godbolt.org/z/5bbMY6E3K">Link</a>
+            https://godbolt.org/z/cs6f1a8YT Maybe get some clang-tidy ones?
           </section>
           <section>
             <h3>What we covered</h3>
             <ul>
               <li>Assembly tooltips</li>
               <li>Control flow graph</li>
-              <li>Readelf</li>
+              <li>Binary tools</li>
               <li>Overrides</li>
               <li>Static Analysers</li>
               <li>Execute only</li>
+              <li>Libraries</li>
             </ul>
           </section>
         </section>
@@ -256,7 +273,9 @@
             </pre>
           </section>
           <section>
-            pass view?
+            pass view? bit count check example? https://godbolt.org/z/eb1den5xf
+            also <code>return std::bitset&lt;64>{value}.count();</code>
+
             <pre>
               std accumulate example?
               maybe <pre>#include &lt;numeric>
@@ -314,8 +333,7 @@
             DREAMS - logins, configurable links, live updates, CPU emulation
           </section>
           <section>
-            Thanks to: team, sponsors, Aquatic
-            TODO: aquatic logo and ask Niraj
+            Thanks to: team, sponsors, Aquatic TODO: aquatic logo
           </section>
         </section>
       </div>
