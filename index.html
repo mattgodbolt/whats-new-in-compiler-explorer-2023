@@ -112,7 +112,11 @@
           </section>
           <section>
             <h2>How?</h2>
-            <img src="images/ce-system.svg" class="fragment white-bg" height="400px" />
+            <img
+              src="images/ce-system.svg"
+              class="fragment white-bg"
+              height="400px"
+            />
           </section>
           <section>
             <h2>Who?</h2>
@@ -142,21 +146,24 @@
           <section>
             <h2>"Jordan"</h2>
             <ul>
-              <li>Low-latency trading developer</li>
+              <li>TODO just a photo, no bullet... Trading developer</li>
               <li>Performance is key</li>
             </ul>
           </section>
           <section>
-            <h3>Example 1</h3>
+            <h3>Sum over an array</h3>
             <ul>
               <li><a href="https://godbolt.org/z/MKev5E6bz">Link</a></li>
               <li class="fragment">
                 <a href="https://godbolt.org/z/4vnoKsqGv">Analysis</a>
               </li>
+              <aside class="notes">
+                Mention this kind of thing is one of the things one might do at Aquatic
+              </aside>
             </ul>
           </section>
           <section>
-            <h3>Example 2</h3>
+            <h3>Inlining</h3>
             <a href="https://godbolt.org/z/bjh7zz59Y" class="fragment">Link</a>
             <aside class="notes">
               - create IDE mode - save as "square.cpp" - Add to IDE - make a new
@@ -175,6 +182,7 @@
               <li>Analysis</li>
               <li>IDE mode</li>
               <li>Templates</li>
+              <li>Libraries</li>
             </ul>
           </section>
         </section>
@@ -182,13 +190,14 @@
           <section>
             <h2>"Mason"</h2>
             <ul>
-              <li>C++ professor</li>
+              <li>TODO photo no bullets / C++ professor</li>
               <li>YouTube videos</li>
               <li>Demonstrate C++</li>
             </ul>
           </section>
           <section>
-            <h3>Teaching assembly</h3>
+            <h3>Teaching</h3>
+            todo spans? maybe write from scratch? or leave just blank part in the middle?
             <a href="https://godbolt.org/z/cTcEPMnTb">Link</a>
             <aside class="notes">
               Start with: https://godbolt.org/z/ssGMvs5T5
@@ -208,15 +217,16 @@
           </section>
           <section>
             <h3>Execution</h3>
-            https://godbolt.org/z/h8srzcrG9
+            https://godbolt.org/z/h8srzcrG9 open without exec view make new one
+            link!!!!
           </section>
           <section>
-            <h3>Teaching compilation/linker</h3>
+            <h3>Likning</h3>
             https://godbolt.org/z/vs1Yqfdbn
           </section>
           <section>
-            <h3>Analysis</h3>
-            https://godbolt.org/z/Yh11a78fM
+            <h3>Static Analysis</h3>
+            https://godbolt.org/z/Yh11a78fM Maybe get some clang-tidy ones?
           </section>
           <section>
             <h3>What we covered</h3>
@@ -225,10 +235,8 @@
               <li>Control flow graph</li>
               <li>Readelf</li>
               <li>Overrides</li>
-              <li>Sonar</li>
+              <li>Static Analysers</li>
               <li>Execute only</li>
-              <li>Libraries</li>
-              <!-- TODO TALK ABOUT LIBRARIES -->
             </ul>
           </section>
         </section>
@@ -238,6 +246,26 @@
             <ul>
               <li>Compiler Developer</li>
             </ul>
+          </section>
+          <section>
+            parse?
+            <pre>
+              void vexing(float f) {
+                int as_int(int(f));
+              }
+            </pre>
+          </section>
+          <section>
+            pass view?
+            <pre>
+              std accumulate example?
+              maybe <pre>#include &lt;numeric>
+                #include &lt;span>
+                
+                int sum(std::span<&lt;const int> array) {
+                  return std::accumulate(begin(array), end(array), 0);
+                }</pre>
+            </pre>
           </section>
           <section>
             <h3>What we covered</h3>
@@ -255,6 +283,7 @@
               <li>Middle-aged man</li>
               <li>Recapturing his youth</li>
               <li>https://compiler-explorer.com/z/WYYbKGre3</li>
+              <li>https://compiler-explorer.com/z/5ac5hY5WT</li>
             </ul>
           </section>
         </section>
@@ -283,6 +312,10 @@
           <section>More platforms</section>
           <section>
             DREAMS - logins, configurable links, live updates, CPU emulation
+          </section>
+          <section>
+            Thanks to: team, sponsors, Aquatic
+            TODO: aquatic logo and ask Niraj
           </section>
         </section>
       </div>

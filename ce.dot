@@ -91,11 +91,19 @@ digraph compiler_explorer {
     lambda_stats -> dynamodb [ltail = cluster_lambda;];
     action_runner_1 -> s3 [ltail = cluster_gh_actions;];
     
-    build [shape = box;label = "Legacy Builder\nEC2";color = "#ddddff:#aaaacc";];
-    
+    build [shape = box;label = "Library Builder\nEC2";color = "#ddddff:#aaaacc";];
+
     admin -> build;
     build -> s3;
-    
+
+    conan [shape = box;label="Conan\nEC2";color = "#ddddff:#aaaacc";]
+    {ce_node_1} -> conan [ltail = cluster_ce_nodes;];
+    build -> conan;
+
+    winsmb [shape = box;label="SMB\nEC2";color = "#ddddff:#aaaacc";]
+    winsmb -> ce_node_1_win;
+    winsmb -> efs;
+
     admin -> {efs s3 dynamodb};
     {ce_node_1} -> admin [ltail = cluster_ce_nodes;];
     {ce_node_1} -> efs [ltail = cluster_ce_nodes;];
