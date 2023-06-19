@@ -53,6 +53,21 @@
         background-color: #ccc;
         border-radius: 1em;
       }
+      .sponsor-thanks img {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+
+      .aq {
+        color: #fdb716;
+        color: #daa732;
+        color: #2e797a;
+        color: #ea6c27;
+        color: #0097a7;
+      }
+      .aq-bg {
+        color: #154151;
+      }
     </style>
   </head>
   <body>
@@ -149,10 +164,11 @@
         <section>
           <section>
             <h2>"Jordan"</h2>
-            <ul>
-              <li>TODO just a photo, no bullet... Trading developer</li>
-              <li>Performance is key</li>
-            </ul>
+            <img
+              src="images/jordan.png"
+              height="400px"
+              alt="Jordan, an HFT dev"
+            />
           </section>
           <section>
             <h3>Sum over an array</h3>
@@ -193,11 +209,7 @@
         <section>
           <section>
             <h2>"Mason"</h2>
-            <ul>
-              <li>TODO photo no bullets / C++ professor</li>
-              <li>YouTube videos</li>
-              <li>Demonstrate C++</li>
-            </ul>
+            <img src="images/mason.png" height="400px" alt="Mason" />
           </section>
           <section>
             <h3>Teaching</h3>
@@ -263,9 +275,7 @@
         <section>
           <section>
             <h2>"Joanna"</h2>
-            <ul>
-              <li>Compiler Developer</li>
-            </ul>
+            <img src="images/joanna.png" height="400px" alt="Joanna" />
           </section>
           <section>
             <h2>Parsing</h2>
@@ -280,6 +290,10 @@
           </section>
           <section>
             <h2>Will it Compile?</h2>
+            <a href="https://godbolt.org/z/vrMeMcv6P">Link</a>
+            <aside class="notes">
+              add the other things, but then finally use /std:c++latest on msvc
+            </aside>
           </section>
           <section>
             <h3>What we covered</h3>
@@ -290,41 +304,73 @@
             </ul>
           </section>
         </section>
+
         <section>
           <section>
             <h2>"Matt"</h2>
-            <ul>
-              <li>Middle-aged man</li>
-              <li>Recapturing his youth</li>
-              <li>https://compiler-explorer.com/z/WYYbKGre3</li>
-              <li>https://compiler-explorer.com/z/5ac5hY5WT</li>
-            </ul>
+            <img
+              src="images/matt.png"
+              height="400px"
+              alt="Absolutely not Matt Godbolt"
+            />
+          </section>
+          <section>
+            <h3>Absolutely not a mid-life crisis</h3>
+            <a href="https://compiler-explorer.com/z/rq35rqqEx">Link</a>
           </section>
         </section>
+
         <section>
-          <section><h2>More!</h2></section>
           <section>
-            <h3>Stats</h3>
-            <a href="https://stats.compiler-explorer.com/"
-              >stats.compiler-explorer.com
-            </a>
+            <h2>But wait!</h2>
+            <h4>There's more!</h4>
           </section>
           <section>
-            <h2>GPUs</h2>
-            <a href="https://godbolt.org/z/Gj38Pj5zh">Link</a>
+            <h3>More!</h3>
+            <ul>
+              <li>
+                <a href="https://stats.compiler-explorer.com/"
+                  >stats.compiler-explorer.com</a
+                >
+              </li>
+              <li>
+                <a href="https://godbolt.org/z/Gj38Pj5zh">GPU execution</a>
+              </li>
+              <li>
+                <a href="https://godbolt.org/z/hh1da1ddo">Windows execution</a
+                ><sup>*</sup>
+              </li>
+            </ul>
+            <div style="font-size: 80%; margin-top: 1em">
+              * results may vary
+            </div>
           </section>
           <section>
-            <h2>Windows Execution</h2>
-            <a href="https://godbolt.org/z/hh1da1ddo">Link</a>
+            <h2>Future Dreams</h2>
+            <ul>
+              <li>More compilers, languages, platforms</li>
+              <li>Logins</li>
+              <li>Live updating links</li>
+              <li>x86 simulator</li>
+            </ul>
           </section>
-          <section>Future Dreams</section>
-          <section>More langs/compilers</section>
-          <section>More platforms</section>
           <section>
-            DREAMS - logins, configurable links, live updates, CPU emulation
-          </section>
-          <section>
-            Thanks to: team, sponsors, Aquatic TODO: aquatic logo
+            <h2>Thanks!</h2>
+            <div class="sponsor-thanks white-bg">
+              <div><img src="https://static.ce-cdn.net/intel/logo-classicblue-3000px.png" height="50px">
+              <img src="https://static.ce-cdn.net/jfrog/jfrog-and-conan-2.png" height="50px">
+              <img src="https://static.ce-cdn.net/SOLID+SANDS-LOGO-RGB-500px.png" height="50px">
+              <img src="https://static.ce-cdn.net/sonar/sonar-1.png" height="50px">
+              </div>
+              <div>
+                <img src="images/patreon.svg" height="50px">
+                <img src="images/github.svg" height="50px">  
+              </div>
+            </div>
+            <div class="sponsor-thanks">
+              <img src="images/the-team.png" height="50px">
+              <img src="images/aquatic-logo.png" height="50px">
+            </div>
           </section>
         </section>
       </div>
