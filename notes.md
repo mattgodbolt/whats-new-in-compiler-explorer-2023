@@ -112,3 +112,43 @@ Suggestions:
     - Alternatively it would be good to include them and some "and the rest of our open source contributors" on the closing card
   - names of archetypes
     - Picture (possibly GPT-generated, kind caricatures)
+
+### run through 19th June 2023
+- 10m to Jordan
+- 22m to end of 
+- 25m to Mason
+- 43m @clang tidy
+- 1hr to end on the nose
+
+raw notes
+- took too long on intro, showboating
+- laboured a bit too long 
+
+So! NEW BUDGET:
+- intro 5m
+  - don't take too long on the "why" - "jordan" covers this
+  - als how is NOT an explanation of the site
+- Jordan 15m
+  - Sum over an array & analysis 7m
+    - needs to explain a few things like compiler window
+  - Inlining, IDE mode 8m
+  - Templates ffs...
+- Mason 20m
+  - Teaching: overrides, asm instructions, CFG
+  - Execute only
+  - Linking/binary tools
+  - Clang tidy/Sonar
+- Joanna 10m
+  - AST 3m
+  - Compiler passes 5m
+  - Conformance 2m
+- Matt 3m MAX
+- BWTM 3m
+- Questions 5m
+
+Times to hit:
+- Intro: 00:05
+- Jordan 00:20
+- Mason 00:40
+- Joanna: 00:50
+- rest...
