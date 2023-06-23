@@ -147,8 +147,11 @@ So! NEW BUDGET:
 - Questions 5m
 
 Times to hit:
-- Intro: 00:05
-- Jordan 00:20
-- Mason 00:40
-- Joanna: 00:50
-- rest...
+- start ..... end
+- 0:00 Intro: 00:05
+- 0:05 Jordan 00:20
+- 0:20 Mason 00:40
+- 0:40 Joanna: 00:50
+- 0:50 rest...
+
+Runthrough 22nd June 56m
