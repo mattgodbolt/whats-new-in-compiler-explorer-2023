@@ -1,4 +1,21 @@
-#### Notes
+## Notes
+
+### Notes when looking at updating for cpponline
+Shared with the CE team I'd be re-doing, new stuff since then:
+- execution env vars
+- heap track
+- windows sandbox, cmake on windows
+- cmake as a language
+- "hit ctrl-S to add a file to Tree mode" :mindblown:
+- #embed support for remote files
+- clang timetrace
+- Emulators! NES BBC SMS, C64, C++ LLVM MOS
+
+Other thoughts:
+- remember to disable adblocker/list godbolt.org ok
+- maybe consider dropping
+
+### Notes from run-throughs etc pre-public showing first time
 
 Time budget: 60m
 - 5m intro
